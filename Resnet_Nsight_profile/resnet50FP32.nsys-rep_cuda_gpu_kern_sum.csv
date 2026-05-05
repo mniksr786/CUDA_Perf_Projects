@@ -1,0 +1,39 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+16.6,18744147,52,360464.4,310092.0,46175,835253,267982.1,_5x_cudnn_volta_scudnn_128x32_relu_small_nn_v1
+10.0,11331695,47,241099.9,172094.0,29983,739575,199753.7,_5x_cudnn_volta_scudnn_128x32_relu_medium_nn_v1
+9.4,10622325,44,241416.5,159261.5,79135,710743,188518.5,_5x_cudnn_volta_scudnn_128x64_3dconv_fprop_medium_nn_v1
+9.0,10142558,44,230512.7,168909.5,30848,676728,179648.2,_5x_cudnn_volta_scudnn_128x32_3dconv_fprop_small_nn_v1
+8.3,9369612,45,208213.6,150271.0,32128,619448,161414.5,_5x_cudnn_volta_scudnn_128x64_relu_small_nn_v1
+5.9,6647598,23,289026.0,212189.0,78175,875477,232141.4,_5x_cudnn_volta_scudnn_128x128_relu_medium_nn_v1
+5.6,6330863,16,395678.9,344012.0,116319,663031,201945.8,_5x_cudnn_volta_scudnn_128x64_relu_xregs_large_nn_v1
+5.4,6137491,32,191796.6,155854.0,33599,495834,119273.8,"void implicit_convolve_sgemm<float, float, (int)1024, (int)5, (int)5, (int)3, (int)3, (int)3, (int)1, (bool)0, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, const T2 *, const T2 *, bool, bool, int, int)"
+5.2,5921303,41,144422.0,136639.0,59007,297565,69133.0,_5x_cudnn_volta_scudnn_128x32_sliced1x4_ldg4_relu_exp_medium_nhwc_tn_v1
+5.1,5726452,31,184724.3,140478.0,34911,413594,108526.3,"void implicit_convolve_sgemm<float, float, (int)128, (int)5, (int)5, (int)3, (int)3, (int)3, (int)1, (bool)0, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, const T2 *, const T2 *, bool, bool, int, int)"
+3.2,3582894,26,137803.6,123663.0,30943,255229,67842.1,"void precomputed_convolve_sgemm<float, (int)1024, (int)5, (int)5, (int)4, (int)3, (int)3, (int)1, (bool)0>(int, int, int, const T1 *, int, T1 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, bool, bool, const T1 *, const T1 *, int *)"
+2.6,2937305,44,66756.9,71791.5,25183,132158,27054.8,volta_sgemm_128x64_nn
+1.9,2121032,16,132564.5,146718.0,63008,170558,39104.3,"void implicit_convolve_sgemm<float, float, (int)128, (int)6, (int)7, (int)3, (int)3, (int)5, (int)1, (bool)0, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, const T2 *, const T2 *, bool, bool, int, int)"
+1.8,2077574,2,1038787.0,1038787.0,1038131,1039443,927.7,"void cudnn::cnn::conv2d_grouped_direct_kernel<(bool)0, (bool)1, (bool)0, (bool)0, (bool)0, (bool)0, (int)0, (int)0, int, float, float, float, float, float, float>(cudnn::cnn::GroupedDirectFpropParams, const T11 *, const T13 *, T12 *, T14, T14, const T14 *, const T14 *, const T12 *, const T15 *, cudnnActivationStruct)"
+1.7,1958211,21,93248.1,94494.0,65951,127902,22579.4,_5x_cudnn_volta_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1
+1.3,1477997,6,246332.8,203629.5,120670,414298,135147.6,"void implicit_convolve_sgemm<float, float, (int)512, (int)6, (int)8, (int)3, (int)3, (int)5, (int)1, (bool)0, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, const T2 *, const T2 *, bool, bool, int, int)"
+1.0,1145867,58,19756.3,10976.0,2783,92031,24477.7,"void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, (bool)0, (bool)1, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nchw2nhwc_params_t<T3>, const T1 *, T2 *)"
+0.9,1026867,12,85572.3,86735.0,49952,121150,31770.9,volta_sgemm_64x64_nn
+0.8,864084,21,41146.9,24127.0,4512,153150,55641.0,"void cudnn::winograd::generateWinogradTilesKernel<(int)0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<T2, T3>)"
+0.7,739537,224,3301.5,3839.5,1696,4992,884.2,"void cask__5x_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask__5x_cudnn::ComputeOffsetsParams)"
+0.5,622108,53,11737.9,8704.0,3009,36671,9232.9,"void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)"
+0.5,602937,2,301468.5,301468.5,299421,303516,2895.6,"void precomputed_convolve_sgemm<float, (int)128, (int)6, (int)7, (int)3, (int)3, (int)5, (int)1, (bool)0>(int, int, int, const T1 *, int, T1 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, bool, bool, const T1 *, const T1 *, int *)"
+0.4,495227,12,41268.9,41328.0,39936,42879,1146.0,volta_sgemm_64x32_sliced1x4_nn
+0.4,396604,5,79320.8,79200.0,78591,79935,588.0,volta_sgemm_128x32_sliced1x4_nn
+0.3,323006,49,6592.0,5728.0,2496,20384,4532.7,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>>(int, T2, T3)"
+0.3,303841,88,3452.7,4128.0,1824,4480,987.9,void cask__5x_cudnn::computeOffsetsKernel3D<(bool)0>(cask__5x_cudnn::ComputeOffsetsParams)
+0.2,277148,4,69287.0,69455.0,68223,70015,757.9,volta_sgemm_32x32_sliced1x4_nn
+0.2,251421,16,15713.8,10192.0,5504,35423,10654.1,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, std::array<char *, (unsigned long)3>>(int, T2, T3)"
+0.2,246335,41,6008.2,5440.0,2272,14144,3394.2,"void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nhwc2nchw_params_t<T3>, const T1 *, T2 *)"
+0.2,241876,88,2748.6,3295.5,1408,3615,784.6,cask__5x_cudnn::computeBOffsetsKernel(cask__5x_cudnn::ComputeBOffsetsParams)
+0.1,119039,2,59519.5,59519.5,58976,60063,768.6,volta_sgemm_32x128_nn
+0.1,105695,2,52847.5,52847.5,32928,72767,28170.4,volta_sgemm_128x128_nn
+0.1,90398,28,3228.5,3135.5,2048,4160,678.9,"void cudnn::cnn::kern_precompute_indices<(bool)0>(int *, int, int, int, int, int)"
+0.0,45088,1,45088.0,45088.0,45088,45088,0.0,"std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool)0, (bool)1, (bool)1, (bool)0, (int)7, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13)"
+0.0,40064,1,40064.0,40064.0,40064,40064,0.0,"void at::native::<unnamed>::max_pool_forward_nchw<float, int>(T2, const T1 *, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *, long *)"
+0.0,32189,6,5364.8,3919.5,3551,11936,3261.4,"void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)0, float, float, float, (bool)1, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)"
+0.0,10271,1,10271.0,10271.0,10271,10271,0.0,"void <unnamed>::softmax_warp_forward<float, float, float, (int)10, (bool)0, (bool)0>(T2 *, const T1 *, int, int, int, const bool *, int, bool)"
+0.0,7520,1,7520.0,7520.0,7520,7520,0.0,"void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, (int)4, (int)4>>(T3)"

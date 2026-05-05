@@ -1,0 +1,63 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+30.5,13808778,608,22711.8,8432.0,4608,159998,39005.9,"void cudnn::engines_precompiled::nchwToNhwcKernel<__half, __half, float, (bool)0, (bool)1, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nchw2nhwc_params_t<T3>, const T1 *, T2 *)"
+8.5,3834637,85,45113.4,41119.0,23552,132575,22553.8,sm75_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage1_warpsize2x2x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+6.9,3131923,433,7233.1,5759.0,4000,19424,3503.3,"void cudnn::engines_precompiled::nhwcToNchwKernel<__half, __half, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nhwc2nchw_params_t<T3>, const T1 *, T2 *)"
+6.6,2972605,59,50383.1,48447.0,25824,100383,16788.7,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x32x64_stage1_warpsize2x1x2_g1_tensor16x8x8_execute_kernel__5x_cudnn
+4.6,2069827,34,60877.3,59471.0,27040,111071,23547.4,sm75_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x128x32_stage1_warpsize2x2x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+3.7,1695689,26,65218.8,62687.5,27904,110398,23584.9,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x128x32_stage1_warpsize2x2x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+3.6,1641385,33,49738.9,47903.0,26655,104735,21996.8,sm75_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x32x64_stage1_warpsize2x1x2_g1_tensor16x8x8_execute_kernel__5x_cudnn
+2.6,1174897,18,65272.1,55055.0,39263,102046,21524.9,sm75_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x32_stage1_warpsize4x1x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+2.5,1126063,30,37535.4,37279.5,14687,62111,12861.0,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x64x32_stage1_warpsize2x2x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+2.0,905970,27,33554.4,34015.0,23200,57568,9140.2,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage1_warpsize2x2x1_g1_tensor16x8x8_t1r1s1_execute_kernel__5x_cudnn
+1.8,808566,6,134761.0,93135.0,45024,265820,103313.2,sm75_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize256x64x32_stage1_warpsize4x1x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+1.7,771511,22,35068.7,36095.5,11840,73471,15504.4,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x64_stage1_warpsize4x1x1_g1_tensor16x8x8_alignc8_execute_kernel__5x_cudnn
+1.7,758903,10,75890.3,66191.5,56767,96959,17394.4,sm70_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage1_warpsize2x2x1_g1_tensor8x8x4_t1r3s3_execute_kernel__5x_cudnn
+1.7,755447,12,62953.9,53311.0,38431,122943,29898.6,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x64x64_stage1_warpsize2x2x1_g1_tensor16x8x8_t1r3s3_execute_kernel__5x_cudnn
+1.6,715932,56,12784.5,7600.0,3328,58687,14487.5,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::float16_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda(float) (instance 1)], std::array<char *, (unsigned long)2>>(int, T2, T3)"
+1.4,635544,2,317772.0,317772.0,317692,317852,113.1,sm75_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize256x32x32_stage1_warpsize4x1x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+1.4,612411,16,38275.7,39600.0,15040,53408,12503.4,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x32_stage1_warpsize4x1x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+1.3,581299,53,10967.9,8032.0,5375,32447,7138.1,"void cudnn::bn_fw_inf_1C11_kernel_NCHW<__half, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, cudnnTensorStruct, const T2 *, const T2 *, const T2 *, const T2 *, T2)"
+1.1,485562,2,242781.0,242781.0,242781,242781,0.0,_5x_cudnn_volta_fp16_scudnn_fp16_128x128_3dconv_fprop_medium_nn_v1
+1.0,449370,2,224685.0,224685.0,224445,224925,339.4,"void implicit_convolve_sgemm<__half, __half, (int)1024, (int)5, (int)5, (int)3, (int)3, (int)3, (int)1, (bool)0, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, const T1 *, kernel_conv_params, unsigned long long, int, float, float, int, const T2 *, const T2 *, bool, bool, int, int)"
+1.0,448825,8,56103.1,54511.5,44863,68831,9233.3,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize256x64x32_stage1_warpsize4x1x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+0.8,359293,8,44911.6,46128.0,32416,54847,10337.9,_5x_cudnn_turing_fp16_s1688cudnn_fp16_256x128_ldg8_relu_filter1x1_stg8_interior_nchw_nn_v1
+0.7,336636,10,33663.6,34047.5,30815,36288,2542.7,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_128x128_nn_align2>(T1::Params)
+0.7,322685,13,24821.9,22592.0,21760,32767,3782.9,turing_fp16_s1688gemm_fp16_128x128_ldg8_f2f_stages_32x1_nn
+0.7,319707,11,29064.3,24511.0,23744,35615,5764.1,turing_fp16_s1688gemm_fp16_128x64_sliced1x2_ldg8_f2f_nn
+0.7,307900,3,102633.3,102270.0,101887,103743,979.9,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x64_stage1_warpsize4x1x1_g1_tensor16x8x8_aligna2_alignc4_execute_kernel__5x_cudnn
+0.6,272924,2,136462.0,136462.0,136318,136606,203.6,_5x_cudnn_volta_fp16_scudnn_fp16_128x64_relu_medium_nn_v1
+0.6,254140,4,63535.0,63295.0,42687,84863,24021.7,_5x_cudnn_volta_fp16_s884cudnn_fp16_256x128_ldg8_relu_f2f_exp_medium_nhwc2nchw_tn_v1
+0.6,251454,2,125727.0,125727.0,125567,125887,226.3,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x16x64_stage1_warpsize4x1x1_g1_tensor16x8x8_aligna2_alignc4_execute_kernel__5x_cudnn
+0.5,228413,49,4661.5,3937.0,3455,9696,1678.0,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 8)]::operator ()() const::[lambda(c10::Half) (instance 1)], std::array<char *, (unsigned long)2>>(int, T2, T3)"
+0.5,225950,2,112975.0,112975.0,112735,113215,339.4,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x16x32_stage1_warpsize4x1x1_g1_tensor16x8x8_aligna2_alignc8_execute_kernel__5x_cudnn
+0.5,216189,2,108094.5,108094.5,107806,108383,408.0,sm75_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize64x256x64_stage1_warpsize1x4x2_g1_tensor16x8x8_execute_kernel__5x_cudnn
+0.4,194462,2,97231.0,97231.0,97215,97247,22.6,sm75_xmma_fprop_image_first_layer_f16f16_f32_f16_nhwckrsc_nhwc_hmma_k64c4r7s7_stride2x2_tile16x64x64_tensor1688_execute_kernel_kernel__5x_cudnn
+0.4,180382,2,90191.0,90191.0,90015,90367,248.9,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x16_stage1_warpsize4x1x1_g1_tensor16x8x8_aligna2_alignc8_execute_kernel__5x_cudnn
+0.4,177053,4,44263.3,44383.5,38399,49887,6214.9,_5x_cudnn_turing_fp16_s1688cudnn_fp16_256x64_sliced1x2_ldg8_relu_f2f_exp_small_nhwc_tn_v1
+0.4,172958,6,28826.3,28911.5,28064,29248,403.4,turing_fp16_s1688gemm_fp16_128x256_ldg8_f2f_stages_32x1_nn
+0.4,164926,2,82463.0,82463.0,81983,82943,678.8,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x128x64_stage1_warpsize2x2x1_g1_tensor16x8x8_t1r3s3_execute_kernel__5x_cudnn
+0.4,163838,6,27306.3,33855.0,12800,35456,11204.8,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x16x64_stage1_warpsize4x1x1_g1_tensor16x8x8_alignc4_execute_kernel__5x_cudnn
+0.4,161470,4,40367.5,40703.5,30719,49344,9747.9,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x64_stage1_warpsize4x1x1_g1_tensor16x8x8_alignc2_execute_kernel__5x_cudnn
+0.3,136479,5,27295.8,27232.0,26880,27711,317.3,turing_fp16_s1688gemm_fp16_64x64_sliced1x4_ldg8_f2f_nn
+0.2,110719,2,55359.5,55359.5,55328,55391,44.5,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x128_nn_align1>(T1::Params)
+0.2,108895,4,27223.8,27183.5,23232,31296,4448.3,turing_fp16_s1688gemm_fp16_256x64_ldg8_f2f_stages_32x1_nn
+0.2,106367,16,6647.9,5184.0,4160,13536,2756.8,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<c10::Half>, std::array<char *, (unsigned long)3>>(int, T2, T3)"
+0.2,105503,2,52751.5,52751.5,52576,52927,248.2,sm75_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize256x32x32_stage1_warpsize4x1x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+0.2,102047,2,51023.5,51023.5,50848,51199,248.2,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x64_nn_align2>(T1::Params)
+0.2,101727,2,50863.5,50863.5,50047,51680,1154.7,sm75_xmma_fprop_implicit_gemm_indexed_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize256x128x32_stage1_warpsize4x2x1_g1_tensor16x8x8_execute_kernel__5x_cudnn
+0.2,101694,2,50847.0,50847.0,50783,50911,90.5,_5x_cudnn_volta_fp16_scudnn_fp16_128x32_relu_small_nn_v1
+0.2,99613,4,24903.3,24719.0,15071,35104,11267.1,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x16_stage1_warpsize4x1x1_g1_tensor16x8x8_aligna8_alignc8_execute_kernel__5x_cudnn
+0.2,99199,2,49599.5,49599.5,49503,49696,136.5,_5x_cudnn_turing_fp16_s1688cudnn_fp16_256x128_ldg8_relu_f2f_exp_medium_nhwc_tn_v1
+0.2,94367,4,23591.8,23456.0,14111,33344,10840.4,sm75_xmma_fprop_implicit_gemm_indexed_wo_smem_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x64_stage1_warpsize4x1x1_g1_tensor16x8x8_aligna8_alignc8_execute_kernel__5x_cudnn
+0.2,85947,24,3581.1,3535.5,3456,3904,117.5,"void cask__5x_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask__5x_cudnn::ComputeOffsetsParams)"
+0.2,77600,2,38800.0,38800.0,38784,38816,22.6,_5x_cudnn_turing_fp16_s1688cudnn_fp16_128x128_ldg8_relu_f2f_exp_small_nhwc_tn_v1
+0.2,72510,2,36255.0,36255.0,36191,36319,90.5,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_64x128_nn_align2>(T1::Params)
+0.1,47613,6,7935.5,7056.0,6688,10847,1710.3,"void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, __half, __half, float, __half, (bool)0, __half, __half, __half, (bool)1, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)"
+0.1,41823,1,41823.0,41823.0,41823,41823,0.0,"void at::native::<unnamed>::max_pool_forward_nchw<c10::Half, int>(T2, const T1 *, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *, long *)"
+0.1,40831,3,13610.3,13599.0,13568,13664,49.0,volta_fp16_s884gemm_fp16_64x64_ldg8_f2f_nn
+0.1,24768,1,24768.0,24768.0,24768,24768,0.0,"std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, __half, __half, __half, float, (bool)0, (bool)1, (bool)1, (bool)0, (int)7, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const __half>, cublasGemvTensorStridedBatched<const __half>, cublasGemvTensorStridedBatched<__half>, float>>(T13)"
+0.1,23648,1,23648.0,23648.0,23648,23648,0.0,"void <unnamed>::softmax_warp_forward<c10::Half, float, float, (int)10, (bool)0, (bool)0>(T2 *, const T1 *, int, int, int, const bool *, int, bool)"
+0.1,22879,2,11439.5,11439.5,11136,11743,429.2,void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_relu_f16_64x64_nn_align8>(T1::Params)
+0.0,12736,1,12736.0,12736.0,12736,12736,0.0,"void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<c10::Half, at::native::MeanOps<c10::Half, float, float, c10::Half>, unsigned int, c10::Half, (int)4, (int)8>>(T3)"
+0.0,8640,2,4320.0,4320.0,4320,4320,0.0,void cask__5x_cudnn::computeOffsetsKernel3D<(bool)0>(cask__5x_cudnn::ComputeOffsetsParams)
+0.0,6016,2,3008.0,3008.0,3008,3008,0.0,cask__5x_cudnn::computeBOffsetsKernel(cask__5x_cudnn::ComputeBOffsetsParams)
